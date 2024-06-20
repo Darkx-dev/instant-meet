@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,6 +19,25 @@ const config = {
     },
     extend: {
       colors: {
+        dark: {
+          1: '#1C1F2E',
+          2: '#161925'
+        },
+        blue: {
+          1: '#0E78F9',
+        },
+        sky: {
+          1: "#C9DDFF"
+        },
+        orange: {
+          1: "#FF742E"
+        },
+        yellow: {
+          1: "#F9A90E"
+        },
+        purple: {
+          1: "#830EF9"
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -52,6 +71,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      backgroundImage: {
+        hero: "url('/images/hero-background.png')"
       },
       borderRadius: {
         lg: "var(--radius)",
